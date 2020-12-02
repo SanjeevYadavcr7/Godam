@@ -1,0 +1,103 @@
+<section class="hero py-16">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="/img/CoverBanner3.png">
+        </div>
+        
+        <!-- <div class="mySlides fade">
+          <img src="/img/CoverBanner2.png">
+        </div> -->
+    </div>
+    <div>
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+</section>
+
+<section class="w-full menu container mx-auto py-8">
+    <h1 class="text-xl font-bold mb-8">Categories</h1>
+    <div class="category flex justify-between">
+        <div class="categoryItem flex flex-col cursor-pointer" onclick="window.location.href='/Category/rice'">
+            <div class="categoryItemImg flex justify-center"><img src="/img/rice.jpeg"><img src="/img/rice2.jpeg"></div>
+            <p class="discountHead">Staples & Salt</p>
+            <p class="discountOff">Up to 5% OFF</p>
+        </div>
+        <div class="categoryItem flex flex-col cursor-pointer" onclick="window.location.href='/Category/personalCare'">
+            <div class="categoryItemImg flex justify-center">
+                <img src="/img/trimmer.jpeg">
+                <img src="/img/powder.jpeg">
+            </div>
+            <p class="discountHead">Personal Care</p>
+            <p class="discountOff">Up to 8% OFF</p>
+        </div>
+        <div class="categoryItem flex flex-col cursor-pointer" onclick="window.location.href='/Category/beverages'">
+            <div class="categoryItemImg flex justify-center">
+                <img src="/img/cocaCola.jpeg">
+                <img src="/img/7up.jpeg"></div>
+            <p class="discountHead">Beverages </p>
+            <p class="discountOff">Up to 3% OFF</p>
+        </div>
+        <div class="categoryItem flex flex-col cursor-pointer" onclick="window.location.href='/Category/instantFood'">
+            <div class="categoryItemImg flex justify-center">
+                <img src="/img/noodles.jpeg">
+                <img src="/img/noodles2.jpeg">
+            </div>
+            <p class="discountHead">Instant Food</p>
+            <p class="discountOff">Up to 10% OFF</p>
+        </div>
+        <div class="categoryItem flex flex-col cursor-pointer" onclick="window.location.href='/Category/babyCare'">
+            <div class="categoryItemImg flex justify-center">
+                <img src="/img/baby.jpeg">
+                <img src="/img/baby2.jpeg">
+            </div>
+            <p class="discountHead">Baby Care</p>
+            <p class="discountOff">Up to 4% OFF</p>
+        </div>
+        <div class="categoryItem flex flex-col cursor-pointer" onclick="window.location.href='/Category/dryFruits'">
+            <div class="categoryItemImg flex justify-center">
+                <img src="/img/dry.jpeg">
+                <img src="/img/dry2.jpeg">
+            </div>
+            <p class="discountHead">Dry Fruits</p>
+            <p class="discountOff">Up to 5% OFF</p>
+        </div>
+        <div class="categoryItem flex flex-col cursor-pointer" onclick="window.location.href='/Category/oil'">
+            <div class="categoryItemImg flex justify-center">
+                <img src="/img/pizza12.jpeg">
+                <img src="/img/pizza5.jpeg">
+            </div>
+            <p class="discountHead">Edible Oils</p>
+            <p class="discountOff">Up to 10% OFF</p>
+        </div>
+    </div>
+</section>
+
+<section class="w-full menu container mx-auto py-8">
+    <h1 class="text-xl font-bold mb-8">Best Deals Store</h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 col-gap-12 row-gap-16">
+        
+        <% pizzas.forEach(function(pizza){ %>
+
+            <div class="card w-full md:w-64">
+                <span class="discount font-medium py-1 px-1 text-xs mb-4"><%= Math.abs(Math.floor(pizza.price/10)) %>% OFF</span>
+                <img class="h-40 mb-4 mx-auto" src="/img/<%= pizza.image%>" alt="pizza" />
+                <div class="text-center">
+                    <h2 class="mb-4 text-sm font-medium"><%= pizza.name%> / <%= pizza.size%> </h2>
+                    <!-- <span class="size py-1 px-4 rounded-full uppercase text-xs"><%= pizza.size%></span> -->
+                    <div class="flex items-center justify-around mt-6">
+                        <span class="font-bold text-lg">₹<%= pizza.price%> <del class="font-normal text-sm"><%= Math.abs(pizza.price)+Math.abs(Math.floor(pizza.price/10)) %></del> </span>
+                        <button data-pizza="<%= JSON.stringify(pizza)%>" class="add-to-cart flex items-center font-medium py-1 px-3">
+                            <!-- <span>+</span> -->
+                            <span class="ml-2 text-sm">+ Add</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        <% }) %>
+        
+    </div>
+
+</section>

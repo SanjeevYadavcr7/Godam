@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pizza App</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+        <link rel="stylesheet" href="/css/app.css">
+    </head>
+
+    <body>  
+        <nav class="navBar mx-auto flex items-center justify-between py-2">
+            <a href="/"><div class="imgLogo"><img src="/img/logo4.png" width="160px" alt="Logo" /></div></a>
+
+            <div>
+                <ul class="flex items-center">
+                    <% if(user) { %>
+                        <% if(user.role === 'admin'){ %>
+                            <!-- <li class="leftm"><a href="/admin/addProduct">Add Product</a></li>
+                            <li class="leftm"><a href="/admin/orders">Orders</a></li>
+                            <li class="leftm"><a href="/admin/adminAccount">My Account</a></li> -->
+                            <div class="dropdown">
+                                <button class="dropbtn text-sm flex items-center">
+                                    <!-- <span class="text-sm font-bold mr-1">Owner : </span> -->
+                                    <%= user.name%>
+                                    <i class="las la-angle-down ml-1 text-xs"></i></button>
+                                <div class="dropdown-content">
+                                  <a href="/admin/adminAccount"><i class="lar la-user-circle text-lg mr-1"></i>Profile</a>
+                                  <a href="/admin/orders"><i class="lar la-clipboard text-lg mr-1"></i>Orders</a>
+                                  <a href="/admin/addProduct"><i class="las la-plus-circle text-lg mr-1"></i>Add Product</a>
+                                  <!-- <a href="#"><i class="las la-sign-out-alt text-lg mr-1"></i>Logout</a> -->
+                                  <form id="logout" action="/logout" method="POST">
+                                    <a onclick="document.getElementById('logout').submit()" href="#" class="text-sm"><i class="las la-sign-out-alt text-lg mr-1"></i>Logout</a>
+                                </form>
+                                </div>
+                              </div>
+                        <% } else{ %>
+                            <!-- <li class="leftm"><a href="/customer/orders" class="text-sm">Orders</a></li> -->
+                            <!-- <li class="leftm"><a href="/customer/customerAccount" class="text-sm">My Account</a></li> -->
+                            <div class="dropdown">
+                                <button class="dropbtn text-sm flex items-center">
+                                    Hi, <%= user.name%>
+                                    <i class="las la-angle-down ml-1 text-xs"></i></button>
+                                <div class="dropdown-content">
+                                  <a href="/customer/customerAccount"><i class="lar la-user-circle text-lg mr-1"></i>Profile</a>
+                                  <a href="/customer/orders"><i class="lar la-clipboard text-lg mr-1"></i>Orders</a>
+                                  <!-- <a href="#"><i class="las la-sign-out-alt text-lg mr-1"></i>Logout</a> -->
+                                  <form id="logout" action="/logout" method="POST">
+                                    <a onclick="document.getElementById('logout').submit()" href="#" class="text-sm"><i class="las la-sign-out-alt text-lg mr-1"></i>Logout</a>
+                                </form>
+                                </div>
+                              </div>
+                            <% } %>
+                    <!-- <li class="leftm">
+                        <form id="logout" action="/logout" method="POST">
+                            <a onclick="document.getElementById('logout').submit()" href="#" class="text-sm">Logout</a>
+                        </form>
+                    </li> -->
+                    <% } else { %>
+                    <li class="leftm text-sm"><a href="/register">Register</a></li>
+                    <li class="leftm text-sm"><a href="/login">Login</a></li>
+                    <% } %>
+                    <li class="leftm">
+                        <a href="/cart" class="inline-block px-6 py-2 rounded-full flex items-center">
+                            <img src="/img/cart.png" alt="cart">
+                        <span id="cartCounter" class="text-white font-bold pl-2"><%= (session.cart) ? session.cart.totalQty : 'My Cart' %></span>
+                    </a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <%- body %>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/js/app.js"></script>
+        
+<script>
+const tabItems = document.querySelectorAll('.tab-item');
+const tabContentItems = document.querySelectorAll('.tab-content-item');
+// Select tab content item
+function selectItem(e)
+{
+    // remove border and hide the previous block 
+	removeborder();
+    removeShow();
+    
+	//Add border to current item
+	this.classList.add('tab-border');
+
+	//Grab content item from DOM
+	const tabContentItem = document.querySelector(`#${this.id}-content`);
+	//Add show class to current item
+	tabContentItem.classList.add('show');
+}
+
+function removeborder(){
+	tabItems.forEach(item => item.classList.remove('tab-border'));
+}
+function removeShow(){
+	tabContentItems.forEach(item => item.classList.remove('show'));
+}
+// Listen for tab click
+tabItems.forEach(item => item.addEventListener('click', selectItem));
+</script>
+
+<script>
+            var slideIndex = 0;
+            // showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 7000); // Change image every 2 seconds
+            }
+        </script>
+    </body>
+</html>

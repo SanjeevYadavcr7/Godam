@@ -1,0 +1,42 @@
+<section class="w-2/3 menuProfile container py-8 p-8">
+    <a class="alink" href="/">Godam</a> <i class="rightArrow las la-angle-right text-xs"></i>
+    <a class="alink linkActive" href="#">My Account</a>
+    <!-- <h1 class="text-lg font-medium mb-2 mt-2">Rice, Atta & Pulses</h1> -->
+    <hr class="mb-5"/>
+
+    <div class="flex flex-row profile">
+        <div class="profileMenu flex flex-col">
+            <!-- <h1>My Account</h1> -->
+            <div class="profileMenu1 activeProfile flex items-center"><i class="lar la-user-circle"></i>Profile</div>
+            <div class="profileMenu2 flex items-center"><i class="lar la-clipboard"></i>Orders</div>
+            <div class="profileMenu3 flex items-center"><i class="las la-home"></i> Address </div>
+            <div class="profileMenu4 flex items-center"><i class="las la-bell"></i>Notifications</div>
+            <div class="profileMenu5 flex items-center"><i class="lar la-credit-card"></i>Payments</div>
+        </div>
+        <!-- <div class="profileDes">
+            <h1 class="font-bold text-3xl pb-6">Profile</h1>
+            <h1 class="font-bold text-lg"><%= user.name%></h1>
+            <h1 class="font-bold text-xs pt-2">Email Id:<span class="font-normal pl-2"><%= user.email%></span></h1>
+            <h1 class="font-bold text-xs pt-1 pb-5">Phone Number:<span class="font-normal pl-2">+91-<%= user.phone%></span></h1>
+            <hr/>            
+            <h1 class="font-medium text-xs pt-5 pb-3">Want to change your password?</h1>
+            <button class="btn-profile px-8 py-3">CHANGE PASSWORD</button>
+
+        </div> -->
+        <div class="container mx-auto pl-10">
+            <table class="w-full table-auto bg-white">
+                <thead>
+                    <tr>
+                        <th class="px-4 py-2 text-left">Orders</th>
+                        <th class="px-4 py-2 text-left">Customer</th>
+                        <th class="px-4 py-2 text-left">Status</th>
+                        <th class="px-4 py-2 text-left">Placed at</th>
+                    </tr>
+                </thead>
+                <tbody id="orderTableBodyy" class="orderT">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</section>

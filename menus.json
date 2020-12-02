@@ -1,0 +1,110 @@
+[
+{
+        "id":{
+            "$oid": "5eee66a5a27a66807cf2bea1"
+        },
+        "name":"Aashirvaad Atta",
+        "image":"pizza1.jpeg",
+        "price":"350",
+        "size":"small"
+},
+{
+    "id":{
+        "$oid": "5eee66a5a27a66807cf2bea2"
+    },
+    "name":"Chana Dal",
+    "image":"pizza2.jpeg",
+    "price":"220",
+    "size":"large"
+},
+{
+    "id":{
+        "$oid": "5eee66a5a27a66807cf2bea3"
+    },
+    "name":"Colgate Toothpaste",
+    "image":"pizza3.jpeg",
+    "price":"475",
+    "size":"medium"
+},
+{
+    "id":{
+        "$oid": "5eee66a5a27a66807cf2bea4"
+    },
+    "name":"Tata Salt",
+    "image":"pizza4.jpeg",
+    "price":"25",
+    "size":"large"
+},
+{
+    "id":{
+        "$oid": "5eee66a5a27a66807cf2bea5"
+    },
+    "name":"Fortune Soya Oil",
+    "image":"pizza5.jpeg",
+    "price":"120",
+    "size":"small"
+},
+{
+    "id":{
+        "$oid": "5eee66a5a27a66807cf2bea6"
+    },
+    "name":"Peanut Butter",
+    "image":"pizza6.png",
+    "price":"380",
+    "size":"medium"
+},
+{
+    "id":{
+        "$oid": "5eee66a5a27a66807cf2bea7"
+    },
+    "name":"Multi Millet Atta",
+    "image":"pizza7.png",
+    "price":"340",
+    "size":"large"
+},
+{
+    "id":{
+        "$oid": "5eee66a5a27a66807cf2bea8"
+    },
+    "name":"Eggs Tray",
+    "image":"pizza8.jpeg",
+    "price":"140",
+    "size":"small"
+},
+{
+    "id":{
+        "$oid": "5eee66a5a27a66807cf2bea9"
+    },
+    "name":"Sensodyne Toothpaste",
+    "image":"pizza9.jpeg",
+    "price":"87",
+    "size":"small"
+},
+{
+    "id":{
+        "$oid": "5eee66a5a27a66807cf2bea10"
+    },
+    "name":"Maggi Noodles",
+    "image":"pizza10.jpeg",
+    "price":"22",
+    "size":"small"
+},
+{
+    "id":{
+        "$oid": "5eee66a5a27a66807cf2bea11"
+    },
+    "name":"Happilo Almonds",
+    "image":"pizza11.jpeg",
+    "price":"456",
+    "size":"small"
+},
+{
+    "id":{
+        "$oid": "5eee66a5a27a66807cf2bea12"
+    },
+    "name":"Gold Winner Refined",
+    "image":"pizza12.jpeg",
+    "price":"450",
+    "size":"small"
+}
+]

@@ -1,0 +1,68 @@
+Steps for building the app - 
+------------------------------------------------------------------------------
+
+[+] Step 1 - Create Directory structure
+
+[+] Step 2 - Create NPM project and install all dependencies
+            - Dependencies
+                - express
+                - ejs express-ejs-layout
+            - Dev dependencies
+                - nodemon
+
+[+] Step 3 - Create  Express Server - (server.js file)
+
+[+] Step 4 - Setup .git to project folder
+
+[+] Step 5 - Configure LaravelMix(Webpack)
+
+[+] Step 6 - Create Homepage, Register and Login Page using HTML and CSS
+
+[+] Step 7 - Create Cart page
+           - Order summary section
+           - Empty cart section
+
+[+] Step 8 - Setup local routes(register,login,cart,home) in routes folder(remove from server.js)
+
+[+] Step 9 - Connect mongoDB and create db using mongo compass
+            - Fetch data from db and reflect the data in home.ejs page
+
+[+] Step 10 - Setup session for globally accessing the cart
+
+[+] Step 11 - Add To Cart functionality
+            - axios to send ajax reqeust
+            - setting up Noty library  
+
+[+] Step 12 - Build register crud
+            - dependencies express-flash express-session-dotenv
+            - status code article https://wwww.restapitutorial.com/httpstatuscodes.html
+
+[+] Step 13 - Build login using passport
+            - setup passport.js
+            - dependencies passport passport-local express-session
+
+[+] Step 14 - Create Order controller and link it in server.js
+
+[+] Step 15 - Create order view with table for customer and admin
+
+[+] Step 16 - Place order functionality
+
+[+] Step 17 - Show orders on customer and admin
+
+[+] Step 18 - Create order with single page status
+
+[+] Step 19 - Order tracker
+            - Socket Connection
+            - setup socket.io   
+
+[-] Step 20 - Buils project for deployment
+
+[-] Step 21 - Deployment
+            - Install nodejs on server
+            - Install mongodb on server
+            - Nginx web server setup + Reverse proxy
+            - Git on server + Git hooks
+            - DNS Settings
+            - Free SSL Certificate
+            - Setup firewall
+            

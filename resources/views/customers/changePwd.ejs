@@ -1,0 +1,44 @@
+<section class="w-2/3 menuProfile container py-8 p-8">
+    <a class="alink" href="/">Godam</a> <i class="rightArrow las la-angle-right text-xs"></i>
+    <a class="alink" href="/customer/customerAccount">My Account</a><i class="rightArrow las la-angle-right text-xs"></i>
+    <a class="alink linkActive" href="#">Change Password</a>
+    <!-- <h1 class="text-lg font-medium mb-2 mt-2">Rice, Atta & Pulses</h1> -->
+    <hr class="mb-5"/>
+
+    <div class=" flex justify-center">
+        <!-- Profile Box -->
+        <div id="tab-1-content" class="w-1/2 profileDes tab-content-item show">
+            <% if(messages.error) { %>
+                <div id="success-alert" role="alert"
+                    class="flex items-center bg-red-500 rounded text-white text-xs font-bold px-2 py-2">
+                    <img class="info-logo" src="/img/info.png" />
+                    <p class="ml-1"><%= messages.error %></p>
+                </div>
+            <% } %>
+            <form action="/changePassword" method="POST" class="pt-6 pb-8">
+                <div class="mb-5">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="oldPassword">
+                        Old Password
+                    </label>
+                    <input name="oldPassword" 
+                    class="shadow appearence-none border rounded w-full py-2 px-3 text-gray-700 
+                    leading-tight focus:outline-none focus:shadow-outline" id="oldPassword" type="text">
+                </div>
+                <div class="mb-6">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="newPassword">
+                       New Password
+                    </label>
+                    <input name="newPassword"
+                     class="shadow appearence-none border rounded w-full py-2 px-3 text-gray-700 mb-3 
+                    leading-tight focus:outline-none focus:shadow-outline" id="newPassword" type="password">
+                    <!-- <p class="text-red-500 text-xs italic">Please choose a password.</p> -->
+                </div>
+                <button class="btn-profile py-3 px-8 uppercase rounded" type="submit">
+                Change Password
+                </button>
+            </form>
+        </div>
+
+    </div>
+
+</section>

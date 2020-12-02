@@ -1,0 +1,28 @@
+<section class="w-full menu container mx-auto py-8 border mt-8 p-8">
+    <a class="alink" href="/">Godam</a> <i class="rightArrow las la-angle-right text-xs"></i>
+    <a class="alink linkActive" href="#"><%= type.type%></a>
+    <!-- <h1 class="text-lg font-medium mb-2 mt-2">Rice, Atta & Pulses</h1> -->
+    <hr class="mb-5"/>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 col-gap-12 row-gap-16">
+        <% pizzas.forEach(function(pizza){ if(pizza.type === type.type){ console.log("Type",type.type) %>
+            <div class="card w-full md:w-64">
+                <span class="discount font-medium py-1 px-1 text-xs mb-4"><%=Math.floor(pizza.price/10)%>% OFF</span>
+                <img class="h-40 mb-4 mx-auto" src="/img/<%= pizza.image%>" alt="pizza" />
+                <div class="text-center">
+                    <h2 class="mb-4 text-sm font-medium"><%= pizza.name%> / <%= pizza.size%> </h2>
+                    <!-- <span class="size py-1 px-4 rounded-full uppercase text-xs"><%= pizza.size%></span> -->
+                    <div class="flex items-center justify-around mt-6">
+                        <span class="font-bold text-lg">₹<%= pizza.price%> <del class="font-normal text-sm"><%= Math.abs(pizza.price)+Math.abs(Math.floor(pizza.price/10)) %></del> </span>
+                        <button data-pizza="<%= JSON.stringify(pizza)%>" class="add-to-cart flex items-center font-medium py-1 px-3">
+                            <!-- <span>+</span> -->
+                            <span class="ml-2 text-sm">+ Add</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        <% } }) %>        
+    </div>
+
+</section>
