@@ -12,6 +12,7 @@ const MongoDbStore = require('connect-mongo')(session)  // passing session varia
 const passport = require('passport');
 const Emitter = require('events');
 
+// mongodb+srv://Sanjeev:sanjeev@7@godam.1uwvm.mongodb.net/sessions?retryWrites=true&w=majority
 
 // Database Connection
 mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true, useCreateIndex:true, useUnifiedTopology:true, useFindAndModify:true}
