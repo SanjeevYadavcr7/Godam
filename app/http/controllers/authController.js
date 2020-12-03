@@ -52,7 +52,7 @@ function authController(){
         async changePwd(req,res,next){
             const {oldPassword, newPassword} = req.body
             const hash = req.user.password
-            const newHashedPassword = await bcrypt.hash(newPassword, 10)
+            const newHashedPassword = await bcrypt.hash(newPassword, 10).catch(e => { console.log(e) })
             bcrypt.compare(oldPassword, hash, (err, isMatch) => {
                 if (err || !isMatch) {
                   console.log("Password doesn't match!")
@@ -108,7 +108,7 @@ function authController(){
 
 
             // Hash password
-            const hashedPassword = await bcrypt.hash(password, 10)
+            const hashedPassword = await bcrypt.hash(password, 10).catch(e => { console.log(e) })
             // console.log(hashedPassword);
 
 
