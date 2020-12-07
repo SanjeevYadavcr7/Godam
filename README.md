@@ -2,12 +2,20 @@
 <p>Godam is a real-time shopping web application :computer:, the application conncets local shops to their customers and acts as a boon for local sellers by helping them in bringing their buisness online :rocket:</p>  <br/>
 <img src="https://github.com/SanjeevYadavcr7/Godam/blob/master/Godam.PNG" width="1000px" height="500px" align="center" style="border:1px solid" alt="Godam">
 
-<h3>Project Features</h3>
-› authentication, profile section for customers and seller <br/>
-› listing down + adding + removing items to be sold <br/>
-› add-to-cart to add items and subtotal feature <br/>
+## <h3>Project Features</h3>
+›  <br/>
+›  <br/>
+›  <br/>
 › monitor status of order(placed, confirmed, delivered etc.) <br/>
 › Learnings - NodeJS, Express-session, MongoDB. Socket.io <br/>
+
+
+- [x] Authentication + Profile section for customers and seller
+- [x] Product listing + Adding + Removing items
+- [x] Add-to-cart   
+- [x] Subtotal pricing
+- [x] Status monitoring(placed, confirmed, delivered etc.)
+
 
 <h3> Technologies </h3>
 › NodeJS v12.18.3(for dev environment) <br/>
