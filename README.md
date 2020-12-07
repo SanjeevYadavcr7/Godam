@@ -16,8 +16,8 @@
 › Ejs v3.1.5(as template engine)<br/>
 › Socket.io v3.0.3(for real-time comm) <br/>
 
-<h3>Setup</h3>
-```sh
+## Setup
+```
 $ yarn
 $ yarn dev && yarn watch
 ```
