@@ -1,1 +1,1 @@
-<h1>Godam | Real-time Shopping WebApp</h1>
+<h2>Godam | Real-time Shopping WebApp</h2>
