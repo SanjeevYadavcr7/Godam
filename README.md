@@ -2,7 +2,7 @@
 <p>Godam is a real-time shopping web application, the application conncets local shops to their customers and acts as a boon for local sellers by helping them in bringing their buisness online.</p>  <br/>
 <img src="https://github.com/SanjeevYadavcr7/Godam/blob/master/Godam.PNG" width="1000px" height="500px" align="center" style="border:1px solid" alt="Godam">
 
-<h3>Project Modules</h3>
+<h3>Project Features</h3>
 › authentication, profile section for customers and seller <br/>
 › listing down + adding + removing items to be sold <br/>
 › add-to-cart to add items and subtotal feature <br/>
