@@ -3,7 +3,8 @@
 <img src="https://github.com/SanjeevYadavcr7/Godam/blob/master/Godam.PNG" width="1000px" height="500px" align="center" style="border:1px solid" alt="Godam">
 
 ## <h3>Project Features</h3>
-- [x] Authentication + Profile section for customers and seller
+- [x] Authentication
+- [x] Profile section for customers/seller
 - [x] Product listing + Adding + Removing items
 - [x] Add-to-cart   
 - [x] Subtotal pricing
