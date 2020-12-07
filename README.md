@@ -16,6 +16,7 @@
 - [x] Express v4.17.1(for handling HTTP requests) <br/>
 - [x] Ejs v3.1.5(as template engine)<br/>
 - [x] Socket.io v3.0.3(for real-time comm) <br/>
+- [ ] Responsiveness
 
 ## <h3>Setup</h3>
 ```
