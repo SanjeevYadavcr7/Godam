@@ -3,13 +3,6 @@
 <img src="https://github.com/SanjeevYadavcr7/Godam/blob/master/Godam.PNG" width="1000px" height="500px" align="center" style="border:1px solid" alt="Godam">
 
 ## <h3>Project Features</h3>
-›  <br/>
-›  <br/>
-›  <br/>
-› monitor status of order(placed, confirmed, delivered etc.) <br/>
-› Learnings - NodeJS, Express-session, MongoDB. Socket.io <br/>
-
-
 - [x] Authentication + Profile section for customers and seller
 - [x] Product listing + Adding + Removing items
 - [x] Add-to-cart   
