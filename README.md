@@ -11,6 +11,7 @@
 
 <h3> Technologies </h3>
 <img alt="npm" src="https://img.shields.io/npm/v/npm"> 
+<img alt="mongo" src="https://img.shields.io/badge/mongoDB-3.6.3-green">
 › NodeJS v12.18.3(for dev environment) <br/>
 › MongoDB v3.6.3(for database stuff) <br/>
 › Express v4.17.1(for handling HTTP requests) <br/>
