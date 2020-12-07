@@ -1,6 +1,7 @@
 <h1>Godam | Real-time Shopping WebApp</h1>
 <p>Hey there <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"><br/><br/>Godam is a real-time shopping web application :computer:, the application conncets local shops to their customers and acts as a boon for local sellers by helping them in bringing their buisness online :rocket:</p> You can visit <a href="https://godam-shopping-app.herokuapp.com/">Godam here</a><br/><br/>
 <img src="https://github.com/SanjeevYadavcr7/Godam/blob/master/Godam.PNG" width="1000px" height="500px" align="center" style="border:1px solid" alt="Godam">
+
 ## <h3>Project Features</h3>
 - [x] Authentication
 - [x] Profile section for customer/seller
