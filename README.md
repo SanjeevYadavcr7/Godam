@@ -10,7 +10,7 @@
 › Learnings - NodeJS, Express-session, MongoDB. Socket.io <br/>
 
 <h3> Technologies </h3>
-[![Node version](https://img.shields.io/node/v/6.14.3.svg?style=flat)](http://nodejs.org/download/) <br/>
+[![Node version](https://img.shields.io/node/v/npm.svg?style=flat)](http://nodejs.org/download/) <br/>
 › NodeJS v12.18.3(for dev environment) <br/>
 › MongoDB v3.6.3(for database stuff) <br/>
 › Express v4.17.1(for handling HTTP requests) <br/>
