@@ -8,3 +8,10 @@
 › add-to-cart to add items and subtotal feature <br/>
 › monitor status of order(placed, confirmed, delivered etc.) <br/>
 › Learnings - NodeJS, Express-session, MongoDB. Socket.io <br/>
+
+<h3> Technologies </h3>
+› NodeJS v12.18.3(for dev environment)
+› MongoDB v3.6.3(for database stuff) 
+› Express v4.17.1(for handling HTTP requests)
+› Ejs v3.1.5(as template engine)
+› Socket.io v3.0.3(for real-time comm)
