@@ -1,5 +1,5 @@
 <h1>Godam | Real-time Shopping WebApp</h1>
-<p>Godam is a real-time shopping web application :computer:, the application conncets local shops to their customers:raised_hands:. and acts as a boon for local sellers by helping them in bringing their buisness online :rocket:</p>  <br/>
+<p>Godam is a real-time shopping web application :computer:, the application conncets local shops to their customers and acts as a boon for local sellers by helping them in bringing their buisness online :rocket:</p>  <br/>
 <img src="https://github.com/SanjeevYadavcr7/Godam/blob/master/Godam.PNG" width="1000px" height="500px" align="center" style="border:1px solid" alt="Godam">
 
 <h3>Project Features</h3>
