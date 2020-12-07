@@ -11,12 +11,12 @@
 - [x] Status Monitoring(placed, confirmed, delivered etc.)
 
 
-<h3> Technologies </h3>
-› NodeJS v12.18.3(for dev environment) <br/>
-› MongoDB v3.6.3(for database stuff) <br/>
-› Express v4.17.1(for handling HTTP requests) <br/>
-› Ejs v3.1.5(as template engine)<br/>
-› Socket.io v3.0.3(for real-time comm) <br/>
+## <h3> Technologies </h3>
+- [x] NodeJS v12.18.3(for dev environment) <br/>
+- [x] MongoDB v3.6.3(for database stuff) <br/>
+- [x] Express v4.17.1(for handling HTTP requests) <br/>
+- [x] Ejs v3.1.5(as template engine)<br/>
+- [x] Socket.io v3.0.3(for real-time comm) <br/>
 
 ## <h3>Setup</h3>
 ```
