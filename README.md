@@ -4,11 +4,11 @@
 
 ## <h3>Project Features</h3>
 - [x] Authentication
-- [x] Profile section for customers/seller
-- [x] Product listing + Adding + Removing items
-- [x] Add-to-cart   
-- [x] Subtotal pricing
-- [x] Status monitoring(placed, confirmed, delivered etc.)
+- [x] Profile section for customer/seller
+- [x] Product Listing + Adding + Removing items
+- [x] Add-To-Cart feature   
+- [x] Subtotal Pricing
+- [x] Status Monitoring(placed, confirmed, delivered etc.)
 
 
 <h3> Technologies </h3>
